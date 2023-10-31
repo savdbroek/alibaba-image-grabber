@@ -7,7 +7,8 @@ A simple JavaScript script to download all the images of an Alibaba product. Thi
 3. Copy and paste the script into the console.
 4. Press Enter and watch the images download.
 
-```javascript/* Copy and paste this into your browser console */
+```js
+/* Copy and paste this into your browser console */
 const layoutLeftDiv = document.querySelector('.layout-left');
 const images = Array.from(layoutLeftDiv.querySelectorAll('img'));
 const urls = images.map(img => img.src)
