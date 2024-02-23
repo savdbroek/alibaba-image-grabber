@@ -1,6 +1,6 @@
 /* Copy and paste this into your browser console */
-const layoutLeftDiv = document.querySelector('.layout-left');
-const images = Array.from(layoutLeftDiv.querySelectorAll('img'));
+const productImageDiv = document.querySelector('.module_productImage');
+const images = Array.from(productImageDiv.querySelectorAll('img'));
 let urls = images.map(img => img.src)
     .filter(src => src.startsWith('https://s.alicdn.com/') && src.endsWith('.jpg'))
     .map(url => url.split('.jpg')[0] + '.jpg');
